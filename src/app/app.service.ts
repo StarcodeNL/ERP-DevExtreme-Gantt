@@ -43,7 +43,8 @@ export class Service {
    */
   getTitle(response: any): any {
     if (response.order_title) return response.order_title;
-    else response.planning_description;
+    if (response.origin_description) return response.origin_description;
+    else return 'No Title Detected';
   }
 
   updateTaskInDb(apiUrl: string, initialObject: Task) {
