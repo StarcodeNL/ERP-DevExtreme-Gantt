@@ -224,7 +224,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   private registerCurrentGantChartVersion() {
     console.group('App Version');
     this.logInfoWithStyle('Name:', 'StarCode gant chart');
-    this.logInfoWithStyle('Build number:', '1.0.5');
+    this.logInfoWithStyle('Build number:', '1.0.6');
     this.logInfoWithStyle('Build branch:', '-');
     console.groupEnd();
   }
